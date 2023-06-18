@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Button functions:
+function sayHello() {
+  alert('You clicked me!');
+}
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +25,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <body>
+          <button onClick={sayHello}>Say Hello!</button>;
+        </body>
       </div>
     );
   }
